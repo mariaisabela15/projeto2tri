@@ -55,10 +55,15 @@ function mostraAlternativas() {
 }
 
 function respostaSelecionada(opcaoSelecionada){
-    const afirmacoes = opcaoSelecionada.afirmacoes;
-    historiaFinal = afirmacoes;
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal = afirmacoes + " ";
     atual++;
     mostraPergunta();
+}
+
+function mostraResultado(){
+    caixaPerguntas.textContent = "Em 2049...";
+    caixaAlternativas.textContent = "",
 }
 
 mostraPergunta();
