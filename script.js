@@ -4,7 +4,7 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-const perguntas = [
+const lista = [
     {
         enunciado: "Você imagina sua vida sem a IA?",
         alternativas: ["SIM","NÃO"],
