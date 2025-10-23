@@ -1,35 +1,39 @@
 :root {
-    --cor-fundo: linear-gradient(135deg, #ffe6f0, #ffd9ec, #ffeaf5);
-    --cor-principal: rgba(255, 255, 255, 0.2);
-    --cor-secundaria: rgba(255, 255, 255, 0.3);
+    --cor-fundo: #01080E;
+    --cor-principal: #0B0D20;
+    --cor-secundaria: #212333;
     --cor-destaque: #fd2bd3;
-    --cor-texto: #4a004e;
+    --cor-texto: #D7F9FF;
+
+
 }
 
 body {
-    background: var(--cor-fundo);
+    background-color: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    transition: background 0.5s ease;
 }
 
 .caixa-principal {
     background-color: var(--cor-principal);
-    backdrop-filter: blur(8px);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(253, 43, 211, 0.2);
+
 }
 
-h1 {
+h1{
     color: var(--cor-destaque);
+
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
 
 button {
@@ -38,12 +42,6 @@ button {
     border: none;
     border-radius: 15px;
     padding: 15px;
-    margin: 5px;
     transition: background-color 0.3s;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: var(--cor-destaque);
-    color: white;
-}
+} 
