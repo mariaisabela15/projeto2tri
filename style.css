@@ -1,9 +1,10 @@
 :root {
-    --cor-fundo: linear-gradient(135deg, #0a0012, #1a0024, #290035);
+    /* Cores principais — fundo escuro com toques em rosa neon */
+    --cor-fundo: linear-gradient(135deg, #0a0a0f, #1a0a14, #2a0014);
     --cor-principal: rgba(255, 255, 255, 0.05);
     --cor-secundaria: rgba(255, 255, 255, 0.1);
-    --cor-destaque: #ff2bd6;
-    --cor-texto: #f4d9ff;
+    --cor-destaque: #ff007f; /* 💖 rosa neon real */
+    --cor-texto: #ffe6f7; /* texto rosado suave */
 }
 
 body {
@@ -20,26 +21,27 @@ body {
 
 .caixa-principal {
     background: var(--cor-principal);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 25px rgba(255, 43, 214, 0.3);
+    box-shadow: 0 0 25px rgba(255, 0, 127, 0.3);
     border-radius: 20px;
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 30px;
-    animation: brilho 6s infinite alternate;
+    animation: brilho 5s infinite alternate;
 }
 
 @keyframes brilho {
-    from { box-shadow: 0 0 15px rgba(255, 43, 214, 0.2); }
-    to { box-shadow: 0 0 30px rgba(255, 43, 214, 0.5); }
+    from { box-shadow: 0 0 15px rgba(255, 0, 127, 0.2); }
+    to { box-shadow: 0 0 35px rgba(255, 0, 127, 0.6); }
 }
 
 h1 {
     color: var(--cor-destaque);
-    text-shadow: 0 0 10px var(--cor-destaque);
+    text-shadow: 0 0 12px var(--cor-destaque);
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 button {
@@ -53,18 +55,20 @@ button {
     cursor: pointer;
     transition: all 0.3s ease;
     text-shadow: 0 0 5px var(--cor-destaque);
-    box-shadow: 0 0 10px rgba(255, 43, 214, 0.3);
+    box-shadow: 0 0 10px rgba(255, 0, 127, 0.3);
 }
 
 button:hover {
     background: var(--cor-destaque);
     color: #fff;
-    box-shadow: 0 0 25px var(--cor-destaque);
+    box-shadow: 0 0 30px var(--cor-destaque);
+    transform: scale(1.05);
 }
 
 .texto-resultado {
     margin-top: 20px;
     font-size: 1.1rem;
+    color: #ffd6ef;
 }
 
 .botao-retornar {
@@ -73,4 +77,5 @@ button:hover {
     background: transparent;
     border: 2px solid var(--cor-destaque);
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
