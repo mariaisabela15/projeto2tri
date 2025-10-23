@@ -1,47 +1,76 @@
 :root {
-    --cor-fundo: #01080E;
-    --cor-principal: #0B0D20;
-    --cor-secundaria: #212333;
-    --cor-destaque: #fd2bd3;
-    --cor-texto: #D7F9FF;
-
-
+    --cor-fundo: linear-gradient(135deg, #0a0012, #1a0024, #290035);
+    --cor-principal: rgba(255, 255, 255, 0.05);
+    --cor-secundaria: rgba(255, 255, 255, 0.1);
+    --cor-destaque: #ff2bd6;
+    --cor-texto: #f4d9ff;
 }
 
 body {
-    background-color: var(--cor-fundo);
+    background: var(--cor-fundo);
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    overflow: hidden;
 }
 
 .caixa-principal {
-    background-color: var(--cor-principal);
+    background: var(--cor-principal);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 25px rgba(255, 43, 214, 0.3);
+    border-radius: 20px;
     width: 90%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
-
+    padding: 30px;
+    animation: brilho 6s infinite alternate;
 }
 
-h1{
+@keyframes brilho {
+    from { box-shadow: 0 0 15px rgba(255, 43, 214, 0.2); }
+    to { box-shadow: 0 0 30px rgba(255, 43, 214, 0.5); }
+}
+
+h1 {
     color: var(--cor-destaque);
-
-}
-
-button:hover {
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    text-shadow: 0 0 10px var(--cor-destaque);
+    margin-bottom: 20px;
 }
 
 button {
-    background-color: var(--cor-secundaria);
+    background: var(--cor-secundaria);
     color: var(--cor-texto);
-    border: none;
+    border: 1px solid var(--cor-destaque);
     border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    padding: 15px 25px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px var(--cor-destaque);
+    box-shadow: 0 0 10px rgba(255, 43, 214, 0.3);
+}
 
-} 
+button:hover {
+    background: var(--cor-destaque);
+    color: #fff;
+    box-shadow: 0 0 25px var(--cor-destaque);
+}
+
+.texto-resultado {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.botao-retornar {
+    margin-top: 25px;
+    font-size: 1.1rem;
+    background: transparent;
+    border: 2px solid var(--cor-destaque);
+    text-transform: uppercase;
+}
