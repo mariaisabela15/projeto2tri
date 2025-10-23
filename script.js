@@ -63,7 +63,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "A IA está transformando a maneira de como estamos vendo e nos relacionamos com as pessoas e o mundo. ";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
