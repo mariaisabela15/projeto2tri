@@ -63,7 +63,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "A IA está transformando a maneira de como estamos vendo e nos relacionamos com as pessoas e o mundo. ";
+    caixaPerguntas.textContent = "A inteligência artificial está transformando a forma como enxergamos o mundo e nos relacionamos com as pessoas. Ela modifica nossas interações, facilita o acesso à informação e cria novas possibilidades de conexão, impactando tanto a vida pessoal quanto profissional. Assim, a IA está redefinindo a maneira como vivemos e nos comunicamos.A IA está transformando a maneira de como estamos vendo e nos relacionamos com as pessoas e o mundo. ";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
